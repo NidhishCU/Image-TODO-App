@@ -11,7 +11,7 @@ Image TODO App is a versatile drag-and-drop image uploader with descriptions. Ea
 - Thumbnail display with description input
 - Persistent data storage using local storage
 - Delete functionality for images
- ## Live[https://nidhishcu.github.io/Image-TODO-App/]
+ ## [Live](https://nidhishcu.github.io/Image-TODO-App/)
  ![image](https://github.com/NidhishCU/Image-TODO-App/assets/98959174/404ca368-d275-4cfd-b755-771016dc2870)
 
 
