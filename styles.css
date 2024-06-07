@@ -1,0 +1,111 @@
+/* Write your desired css here */
+
+/* Basic styles for the app */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+}
+
+.carousel-item:nth-child(1) {
+    animation: carousel 10s infinite;
+}
+
+.carousel-item:nth-child(2) {
+    animation: carousel 10s infinite 5s;
+}
+
+@keyframes carousel {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    50% { opacity: 1; }
+    75% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.app-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.dropzone {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.dropzone.dragover {
+    border-color: #000;
+}
+
+.file-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.file-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 50px;
+    resize: none;
+    margin-right: 10px;
+}
+
+.icons {
+    display: flex;
+    gap: 5px;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.des-added {
+    border-color: #00ff00;
+}
